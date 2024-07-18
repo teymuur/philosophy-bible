@@ -1,0 +1,64 @@
+/* about.css */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+
+}
+
+.about h1 {
+    font-size: 3em;
+}
+
+.about h3 {
+    font-weight: normal;
+}
+
+.contact {
+    margin: 20px;
+}
+
+.contact h2 {
+    text-decoration: underline;
+}
+p{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+ a {
+    color: #337ab7;
+    text-decoration: none;
+}
+ a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    color: #fff;
+    line-height: 180%;
+    padding: 1em 0 1em 0;
+    margin: 0;
+    background: #333;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 24px;
+    padding: 5px;
+}

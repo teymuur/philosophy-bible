@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.home {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 3em;
+    color: #e0e0e0;
+}
+
+.home h3 {
+    font-weight: normal;
+    color: #b0b0b0;
+}
+
+.directory {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 600px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.section {
+    margin: 20px;
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.directory h2 {
+    text-decoration: underline;
+    color: #e0e0e0;
+}
+
+.directory ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.directory li {
+    margin-bottom: 10px;
+}
+
+.directory a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+.directory a:hover {
+    text-decoration: underline;
+}
+.schools {
+    margin-right: 200px;
+}
+a[href="about.html"] {
+    color: #64b5f6;
+    text-decoration: none;
+    float: right;
+}
+
+footer {
+    width: 100%;
+    color: #fff;
+    line-height: 180%;
+    padding: 1em 0;
+    background: #333;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 24px;
+    padding: 5px;
+}
