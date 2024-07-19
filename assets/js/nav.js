@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const aboutLink = document.createElement('a');
     aboutLink.style.color = 'white';
     aboutLink.style.textDecoration = 'none';
-    aboutLink.style.fontSize = '24px';
+    aboutLink.style.fontSize = '20px';
     aboutLink.textContent = 'About';
-
+    aboutLink.marginRight = '10px';
+    
     // Determine URL and set href for homeLink
     const currentUrl = window.location.pathname;
 
@@ -46,4 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Append navbar to the body
     document.body.insertBefore(navbar, document.body.firstChild);
+    
+    const icons = document.createElement('link');
+    icons.rel ='stylesheet';
+    icons.href =  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+    document.head.appendChild(icons);
 });
