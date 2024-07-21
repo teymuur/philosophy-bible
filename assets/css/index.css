@@ -7,19 +7,24 @@ body {
 }
 
 .home {
-    background-color: #1e1e1e;
+    background: url('/philosophy-bible/assets/images/home.png');
+    background-size: cover;
     padding: 20px;
-    text-align: center;
+    
 }
 
 .home h1 {
     font-size: 3em;
     color: #e0e0e0;
+    text-align: center;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
 }
 
-.home h3 {
+.home h2 {
     font-weight: normal;
-    color: #b0b0b0;
+    color: #e0e0e0;
+    margin-left: 38.5%;
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
 }
 
 .directory {
@@ -69,7 +74,7 @@ body {
     margin-right: 200px;
 }
 a[href="about.html"] {
-    color: #64b5f6;
+    color: #9acdf7;
     text-decoration: none;
     float: right;
 }
