@@ -28,11 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (currentUrl.startsWith('/schools/') || currentUrl.startsWith('/philosophers/')) {
         homeLink.href = '/';
-    } else if (currentUrl.startsWith('/philosophy-bible/school/')) {
-        homeLink.href = '/philosophy-bible';
     } else {
-        homeLink.href = '/';
-    }
+        homeLink.href = '/philosophy-bible';
+    }   
 
     // Set href for aboutLink
     if (currentUrl.startsWith('/schools/') || currentUrl.startsWith('/philosophers/')) {
