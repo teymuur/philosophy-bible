@@ -10,7 +10,6 @@ body {
     background: url('/philosophy-bible/assets/images/home.png');
     background-size: cover;
     padding: 20px;
-    
 }
 
 .home h1 {
@@ -25,6 +24,12 @@ body {
     color: #e0e0e0;
     margin-left: 38.5%;
     text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000;
+}
+
+.home a {
+    color: #9acdf7;
+    text-decoration: none;
+    float: right;
 }
 
 .directory {
@@ -42,8 +47,8 @@ body {
 }
 
 .section {
-    margin: 20px;
-    padding: 20px;
+    margin: 40px;
+    padding: 40px;
     flex: 1;
     min-width: 300px;
 }
@@ -70,14 +75,6 @@ body {
 .directory a:hover {
     text-decoration: underline;
 }
-.schools {
-    margin-right: 200px;
-}
-a[href="about.html"] {
-    color: #9acdf7;
-    text-decoration: none;
-    float: right;
-}
 
 footer {
     width: 100%;
@@ -92,4 +89,18 @@ footer a {
     color: #fff;
     font-size: 24px;
     padding: 5px;
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

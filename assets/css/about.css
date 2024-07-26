@@ -5,22 +5,25 @@ body {
     font-size: larger;
     margin: 0;
     padding: 0;
+    background-color: #121212; /* Dark background for the body */
+    color: #e0e0e0; /* Light text color */
 }
 
 .about {
-    background-color: #f1f1f1;
+    background-color: #1e1e1e; /* Slightly lighter dark background for the about section */
     padding: 20px;
     text-align: center;
     justify-items: center;
-
 }
 
 .about h1 {
     font-size: 3em;
+    color: #e0e0e0; /* Light color for headings */
 }
 
 .about h3 {
     font-weight: normal;
+    color: #b0b0b0; /* Slightly lighter color for subheadings */
 }
 
 .contact {
@@ -29,36 +32,40 @@ body {
 
 .contact h2 {
     text-decoration: underline;
+    color: #e0e0e0; /* Light color for contact section headings */
 }
-p{
+
+p {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     width: 50%;
+    color: #e0e0e0; /* Light color for paragraphs */
 }
 
- a {
-    color: #337ab7;
+a {
+    color: #1e90ff; /* Light blue color for links */
     text-decoration: none;
 }
- a:hover {
+
+a:hover {
     text-decoration: underline;
 }
 
 footer {
     float: left;
     width: 100%;
-    color: #fff;
+    color: #e0e0e0; /* Light color for footer text */
     line-height: 180%;
-    padding: 1em 0 1em 0;
+    padding: 1em 0;
     margin: 0;
-    background: #333;
+    background: #1e1e1e; /* Dark background for footer */
     text-align: center;
 }
 
 footer a {
-    color: #fff;
+    color: #1e90ff; /* Light blue color for footer links */
     font-size: 24px;
     padding: 5px;
 }
