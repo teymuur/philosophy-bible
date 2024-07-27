@@ -6,11 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     navbar.style.display = 'flex';
     navbar.style.justifyContent = 'space-between';
     navbar.style.margin = '0 auto';
-    
+    navbar.style.flexWrap = 'wrap';
+
     // Container for title and dropdowns
     const leftContainer = document.createElement('div');
     leftContainer.style.display = 'flex';
     leftContainer.style.alignItems = 'center';
+    leftContainer.style.flexGrow = '1';
+    leftContainer.className = 'btnnn';
+
 
     // Create navbar content for home link
     const homeLink = document.createElement('a');
@@ -19,6 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
     homeLink.style.fontSize = '24px';
     homeLink.style.marginRight = '20px';
     homeLink.textContent = 'Philosophy Bible';
+    const aboutLink = document.createElement('a');
+    aboutLink.style.color = 'white';
+    aboutLink.style.textDecoration = 'none';
+    aboutLink.style.fontSize = '20px';
+    aboutLink.textContent = 'About';
+    aboutLink.style.marginRight = '10px';
 
     // Create dropdown menus
     const createDropdown = (title, items) => {
@@ -33,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         button.style.fontSize = '20px';
         button.style.border = 'none';
         button.style.cursor = 'pointer';
+        button.className = 'btnnn';
         button.textContent = title;
 
         const dropdownContent = document.createElement('div');
@@ -126,16 +137,44 @@ document.addEventListener('DOMContentLoaded', function() {
     leftContainer.appendChild(createDropdown('Schools', schools));
     leftContainer.appendChild(createDropdown('Philosophers', philosophers));
 
-    // Append leftContainer and aboutLink to navbar
-    navbar.appendChild(leftContainer);
-    navbar.appendChild(aboutLink);
+    // Create a container for all nav items and aboutLink
+    const navContent = document.createElement('div');
+    navContent.id = 'nav-content';
+    navContent.style.display = 'flex';
+    navContent.style.flexDirection = 'row';
+    navContent.style.flexGrow = '1';
+    navContent.appendChild(leftContainer);
+    navContent.appendChild(aboutLink);
+
+    // Append hamburger and navContent to navbar
+
+    navbar.appendChild(navContent);
 
     // Append navbar to the body
     document.body.insertBefore(navbar, document.body.firstChild);
+
+
 
     // Add FontAwesome icons
     const icons = document.createElement('link');
     icons.rel = 'stylesheet';
     icons.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
     document.head.appendChild(icons);
+
+    // Add styles for hamburger menu and mobile view
+    const styles = document.createElement('style');
+    styles.textContent = `
+
+        @media (max-width: 600px) {
+
+            .btnnn {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            
+        }
+    `;
+    document.head.appendChild(styles);
 });
